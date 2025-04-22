@@ -27,17 +27,17 @@ if tipo_de_cliente == 1:
 elif tipo_de_cliente == 2:
     if consumo_m3 > 150:
         bonificacion = 0.08 * subtotal
-    if consumo_m3 > 300:
+    elif consumo_m3 > 300:
         bonificacion = 0.12 * subtotal
-    if consumo_m3 < 50:
+    elif consumo_m3 < 50:
         recargo = 0.05 * subtotal
 
 elif tipo_de_cliente == 3:
     if consumo_m3 > 500:
         bonificacion = 0.20 * subtotal
-    if consumo_m3 > 1000:
+    elif consumo_m3 > 1000:
         bonificacion = 0.30 * subtotal
-    if consumo_m3 < 200:
+    elif consumo_m3 < 200:
         recargo = 0.10 * subtotal
 
 totalsiniva = subtotal + cargo_fijo - bonificacion + recargo
